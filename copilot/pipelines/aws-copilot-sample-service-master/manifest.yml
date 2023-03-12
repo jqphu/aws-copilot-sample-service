@@ -19,3 +19,10 @@ source:
     repository: https://github.com/jqphu/aws-copilot-sample-service
     # Optional: specify the name of an existing CodeStar Connections connection.
     # connection_name: a-connection
+    
+stages:
+  -
+  # Only test, deploy to prod happens in a different pipeline
+    name: test
+    test_commands:
+      - echo "o tests to run looks good :)"
