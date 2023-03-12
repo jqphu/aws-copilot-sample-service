@@ -19,11 +19,3 @@ source:
     repository: https://github.com/jqphu/aws-copilot-sample-service
     # Optional: specify the name of an existing CodeStar Connections connection.
     # connection_name: a-connection
-
-# This section defines the order of the environments your pipeline will deploy to.
-stages:
-  -
-  # Test should be always continually deployed.
-    name: test
-    test_commands:
-      - echo "tests passed (even though there are no tests :P)"
