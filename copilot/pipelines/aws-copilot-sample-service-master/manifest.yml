@@ -27,7 +27,3 @@ stages:
     name: test
     test_commands:
       - echo "tests passed (even though there are no tests :P)"
-  -
-  # Prod requires manual approval
-    name: prod
-    requires_approval: true
